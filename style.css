@@ -1,0 +1,99 @@
+html{
+  height:100%;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+}
+
+div {
+  height: 5vh;
+  width: 5vh;
+  border: solid 0px;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  visibility: visible;
+}
+
+img {
+  position: absolute;
+  height: 15%;
+  width: 10px;
+}
+
+h1 {
+  text-align: center;
+  position: absolute;
+  color: white;
+
+}
+
+#score1 {
+  position: absolute;
+  width: 49vw;
+  left: 0px;
+  top: 0px;
+  text-align: right;
+}
+
+#score2 {
+  position: absolute;
+  width: 49vw;
+  left: 51vW;
+  top: 0px;
+  text-align: left;
+}
+
+#thing {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  text-align: center;
+  
+}
+
+#paddle1 {
+  background-color: blue;
+}
+
+#paddle2 {
+  background-color: red;
+}
+
+#spanwer {
+  border-radius: 0%;
+  background-color: red;
+  animation-name: bida;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#result{
+  width: 100%;
+  top:0px;
+  text-align: center;
+  visibility: hidden;
+}
+
+@keyframes bida {
+  from {
+    transform: rotate(-360deg);
+    width: 5vh;
+    height: 5vh;
+  }
+
+  to {
+    transform: rotate(360deg);
+    width: 10vh;
+    height: 10vh;
+  }
+}
+
+button {
+  position: absolute;
+  visibility: hidden;
+
+}
